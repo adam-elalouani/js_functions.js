@@ -13,20 +13,24 @@ function addN(n){
         return x+n;
     }
 }
+console.log
 
 const lowercase = (inputstring) => inputstring.toLowerCase();
 const example = "YES";
 const lowercasenow = lowercase(example);
+console.log(lowercasenow);
 
 
 const prefix = (prefix) => (inputstring) => prefix + inputstring;
+
 const example1 = "Yes"
-const newprefix = example1("/No");
+const newprefix = example1 + ("/No");
+console.log(newprefix);
 
 const orderfunction = (prefix) => (postfix) => (inputstring) => {
     return prefix + inputstring + postfix;
 }
-
+console.log(orderfunction);
 
 
 function lettergrade (score){
@@ -50,6 +54,7 @@ function lettergrade (score){
         }
     })
 }
+
 const score = [95, 72, 88, 55, 78, 92];
 const grades = lettergrade(score);
 console.log(grades);
@@ -60,6 +65,7 @@ function flat(arrays){
 }
 const arrays = [[1, 2, 3], [4, 5], [6]];
 const flatarray = flat(arrays);
+console.log(flatarray);
 
 
 function every(array, test) {
@@ -69,12 +75,28 @@ function every(array, test) {
             return false;
         }
     }
-    else return true;
+    return true;
   }
-  
+
   console.log(every([1, 3, 5], n => n < 10));
   // → true
   console.log(every([2, 4, 16], n => n < 10));
   // → false
   console.log(every([], n => n < 10));
   // → true
+
+
+  function losehealth (fireball) {
+
+  }
+
+const fireball = (array) => {
+    for(var i = 0; i < health.length; i++){
+        array[i] = array[i] - 10;
+        
+    }
+    return array;
+}
+
+const fireball = 
+  const health = [50, 60, 80, 55]
