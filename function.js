@@ -78,6 +78,16 @@ function every(array, test) {
     return true;
   }
 
+  function every(array, test) {
+    // Your code here.
+    for(let element of a){
+        if (!test(element[a])){
+            return false;
+        }
+    }
+    return true;
+  }
+
   console.log(every([1, 3, 5], n => n < 10));
   // → true
   console.log(every([2, 4, 16], n => n < 10));
@@ -90,13 +100,17 @@ function every(array, test) {
 
   }
 
-const fireball = (array) => {
-    for(var i = 0; i < health.length; i++){
-        array[i] = array[i] - 10;
-        
-    }
-    return array;
-}
 
-const fireball = 
-  const health = [50, 60, 80, 55]
+
+  //foreach
+  //map
+  //reduce
+  const flat = (array) => {
+
+  }
+
+  function every (array, test){
+    return array.every((element) => test(element))
+  }
+  function someFn (n){return n% 2 == 0};
+  console.log(every([1, 3, 5, 6], someFn));
